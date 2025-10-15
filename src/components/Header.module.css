@@ -1,0 +1,85 @@
+/* src/components/Header.module.css (FINAL FIX FOR CENTERING) */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    /* Drop shadow at the bottom of the header */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); 
+    border-bottom: 1px solid #ddd; /* Subtle bottom border for separation */
+}
+
+.container {
+    max-width: 1280px; /* Equivalent to max-w-7xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; /* Equivalent to p-4 */
+    display: flex;
+    align-items: center;
+    /* We don't need space-between anymore; margin:auto handles separation */
+    /* justify-content: space-between; */
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Equivalent to space-x-2 */
+    text-decoration: none;
+    /* CRUCIAL FIX: Pushes the logo to the left, taking up all available space
+       to the right before the next element (.nav) starts. */
+    margin-right: auto; 
+}
+
+.logoText {
+    font-size: 1.25rem; /* xl */
+    font-weight: 700; /* bold */
+    color: #4B0082; /* primary-text */
+}
+
+/* Navigation links container */
+.nav {
+    display: none; /* Hidden by default (mobile first) */
+    gap: 2rem; /* space-x-8 */
+}
+
+/* Show nav on medium screens and up (Desktop) */
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        /* margin-left: auto is no longer needed here since margin-right: auto 
+           is on the logo container. This ensures the nav stays to the right. */
+    }
+    .mobileMenu {
+        display: none;
+    }
+}
+
+.navLink {
+    color: #4B0082;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 150ms;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.navLink:hover {
+    color: #8558DB; /* accent-purple */
+}
+
+/* Underline hover effect */
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #8558DB;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+}

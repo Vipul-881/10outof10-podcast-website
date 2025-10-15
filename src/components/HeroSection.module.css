@@ -1,0 +1,113 @@
+/* src/components/HeroSection.module.css (MODIFIED: Added z-index to container) */
+
+/* 1. Define the Continuous Color Wave Animation Keyframes (No change) */
+@keyframes colorWave {
+    0% { background-position: 0% 0%; } 
+    100% { background-position: 100% 0%; } 
+}
+
+/* 2. Define the subtle Wave Motion for position/scale (No change) */
+@keyframes waveMotion {
+    0% { transform: skewY(-3deg) translate(0, 0) scale(1.0); }
+    50% { transform: skewY(-3deg) translate(10px, 5px) scale(1.01); } 
+    100% { transform: skewY(-3deg) translate(0, 0) scale(1.0); }
+}
+
+.heroSection {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+    background-color: #F6F8FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* CRUCIAL FIX: Added z-index to lift the content above the background */
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 20; /* Increased z-index */
+    position: relative; /* Ensure z-index works */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.tagline {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #4B0082;
+    max-width: 32rem;
+}
+
+.subTagline {
+    font-size: 1.25rem;
+    color: #4B0082;
+}
+
+.spotifyButton {
+    display: inline-flex;
+    align-items: center;
+    background-color: #8558DB;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: opacity 200ms;
+    text-decoration: none;
+}
+
+.spotifyButton:hover {
+    opacity: 0.9;
+}
+
+.spotifyButton svg {
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.diagonalBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Ensure the background stays beneath the content */
+    z-index: 10; 
+    
+    background: linear-gradient(
+        to right,
+        #F6F8FB 0%,        
+        #F6F8FB 20%,       
+        #E0E0FF 25%,       
+        #DCDCF6 30%,       
+        #F6F8FB 35%,       
+        #F6F8FB 65%,
+        #E0E0FF 70%,       
+        #DCDCF6 75%,       
+        #F6F8FB 80%,
+        #F6F8FB 100%
+    );
+    background-size: 300% 100%; 
+    
+    animation: 
+        colorWave 5s linear infinite, 
+        waveMotion 30s ease-in-out infinite alternate; 
+    
+    transform: skewY(-3deg);
+    transform-origin: top left;
+}
