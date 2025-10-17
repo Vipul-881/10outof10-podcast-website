@@ -1,59 +1,124 @@
-/* src/components/Header.module.css (FINAL FIX FOR CENTERING) */
+/* src/components/Header.module.css (COMPLETE CODE) */
+
 .header {
     position: sticky;
     top: 0;
     z-index: 50;
     background-color: white;
-    /* Drop shadow at the bottom of the header */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); 
-    border-bottom: 1px solid #ddd; /* Subtle bottom border for separation */
+    border-bottom: 1px solid #ddd; 
 }
 
 .container {
-    max-width: 1280px; /* Equivalent to max-w-7xl */
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem; /* Equivalent to p-4 */
+    padding: 1rem;
     display: flex;
     align-items: center;
-    /* We don't need space-between anymore; margin:auto handles separation */
-    /* justify-content: space-between; */
 }
 
 .logoContainer {
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Equivalent to space-x-2 */
+    gap: 0.5rem;
     text-decoration: none;
-    /* CRUCIAL FIX: Pushes the logo to the left, taking up all available space
-       to the right before the next element (.nav) starts. */
+    /* Pushes logo left, resolving centering issues */
     margin-right: auto; 
 }
 
 .logoText {
-    font-size: 1.25rem; /* xl */
-    font-weight: 700; /* bold */
-    color: #4B0082; /* primary-text */
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4B0082;
 }
 
-/* Navigation links container */
+/* Desktop Navigation links container */
 .nav {
     display: none; /* Hidden by default (mobile first) */
-    gap: 2rem; /* space-x-8 */
+    gap: 2rem;
 }
 
-/* Show nav on medium screens and up (Desktop) */
+/* MOBILE MENU BUTTON STYLES */
+.menuButton {
+    /* Always visible on mobile, hidden on desktop */
+    display: block; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4B0082; /* Primary text color */
+    z-index: 60; /* Above the overlay */
+}
+
+/* MOBILE SLIDE-OUT MENU STYLES */
+.mobileMenuOverlay {
+    /* Start position: Off-screen to the right */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; /* Full width overlay */
+    height: 100vh;
+    background-color: rgba(246, 248, 251, 0.95); /* Semi-transparent light background */
+    z-index: 55; /* Above header but below menu button */
+    
+    /* Animation setup: Slide off-screen */
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+    
+    /* Content alignment (links will slide in from the right) */
+    display: flex;
+    justify-content: flex-end; /* Keep content to the right */
+}
+
+.mobileMenuOverlay.open {
+    /* End position: On-screen */
+    transform: translateX(0);
+}
+
+.mobileMenuContent {
+    /* The actual panel containing the links (e.g., 75% width of the screen) */
+    width: 75%; 
+    max-width: 300px; /* Max size for a large tablet */
+    background-color: white; 
+    padding: 6rem 2rem 2rem; /* Padding for content below the header */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobileNavLink {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4B0082;
+    text-decoration: none;
+    border-bottom: 2px solid #8558DB; /* Accent line for each link */
+    padding-bottom: 0.5rem;
+    transition: color 0.2s;
+}
+
+.mobileNavLink:hover {
+    color: #8558DB;
+}
+
+
+/* Desktop Styles: Hide menu button and show desktop nav */
 @media (min-width: 768px) {
     .nav {
-        display: flex;
-        /* margin-left: auto is no longer needed here since margin-right: auto 
-           is on the logo container. This ensures the nav stays to the right. */
+        display: flex; /* Shows desktop navigation */
+        gap: 2rem;
+        margin-left: auto;
     }
-    .mobileMenu {
-        display: none;
+    .menuButton {
+        display: none; /* Hides hamburger icon */
+    }
+    .mobileMenuOverlay {
+        display: none; /* Hides mobile menu completely */
     }
 }
 
+
+/* Existing navLink styles (used for desktop links) */
 .navLink {
     color: #4B0082;
     font-weight: 600;

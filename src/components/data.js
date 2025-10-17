@@ -31,7 +31,7 @@ export const EPISODES = [
     season: 1,
     episode: 8,
     title: 'Discussions on The Social Network-Kushal N and Anek',
-    description: '<Not Given>',
+    description: "In the third and final episode of season three, Kushal and Anek discuss David Fincher's critically acclaimed The Social Network. They praise Aaron Sorkin's rhythmic dialogue and explore the film's underlying ideas, dissecting why it stands out in Fincher's filmography.",
     url: 'https://open.spotify.com/episode/3iocOwKvzh4XHcPPeHunw8?si=EKg1S93OQcmc-62Q9n48Qw',
     isPopular: false,
     isLatest: true,
@@ -47,7 +47,6 @@ export const EPISODES = [
     url: 'https://open.spotify.com/episode/7o7Zle42jyINGPmUEn0b4a?si=85Gf0BwtRF2TGQ_k2RgpLg',
     isPopular: false,
     isLatest: true,
-    // ADDED THUMBNAIL PROPERTY
     thumbnail: '/assets/blog-image-1.jpg',
   },
 ];
@@ -76,54 +75,54 @@ export const GUESTS = [
 
 // --- BLOG DATA ARRAY ---
 export const BLOGS = [
-  // {
-  //   id: 'b1',
-  //   title: 'BLOG TITLE',
-  //   slug: 'blog-title-1', 
-  //   description: 'A brief description of th blog upto this length and can increase the size in like a couple of lines',
-  //   date: 'DD/MM/YYYY',
-  //   content: [
-  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  //       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  //   ],
-  //   image: '/assets/blog-image-1.jpg',
-  // },
-  // {
-  //   id: 'b2',
-  //   title: 'SECOND BLOG POST',
-  //   slug: 'second-blog-post',
-  //   description: 'This is the description for the second blog post, which is slightly longer just to test the text wrapping.',
-  //   date: '20/10/2025',
-  //   content: [
-  //       'Content for the second blog post goes here...',
-  //       'It is usually much longer and more detailed than the description.',
-  //   ],
-  //   image: null, 
-  // },
-  // {
-  //   id: 'b3',
-  //   title: 'SECOND BLOG POST',
-  //   slug: 'second-blog-post',
-  //   description: 'This is the description for the second blog post, which is slightly longer just to test the text wrapping.',
-  //   date: '20/10/2025',
-  //   content: [
-  //       'Content for the second blog post goes here...',
-  //       'It is usually much longer and more detailed than the description.',
-  //   ],
-  //   image: null, 
-  // },
-  // {
-  //   id: 'b4',
-  //   title: 'SECOND BLOG POST',
-  //   slug: 'second-blog-post',
-  //   description: 'This is the description for the second blog post, which is slightly longer just to test the text wrapping.',
-  //   date: '20/10/2025',
-  //   content: [
-  //       'Content for the second blog post goes here...',
-  //       'It is usually much longer and more detailed than the description.',
-  //   ],
-  //   image: null, 
-  // },
+  {
+    id: 'b1',
+    title: 'BLOG TITLE',
+    slug: 'blog-title-1', 
+    description: 'A brief description of th blog upto this length and can increase the size in like a couple of lines',
+    date: 'DD/MM/YYYY',
+    content: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    ],
+    image: '/assets/blog-image-1.jpg',
+  },
+  {
+    id: 'b2',
+    title: 'SECOND BLOG POST',
+    slug: 'second-blog-post',
+    description: 'This is the description for the second blog post, which is slightly longer just to test the text wrapping.',
+    date: '20/10/2025',
+    content: [
+        'Content for the second blog post goes here...',
+        'It is usually much longer and more detailed than the description.',
+    ],
+    image: null, 
+  },
+  {
+    id: 'b3',
+    title: 'SECOND BLOG POST',
+    slug: 'second-blog-post',
+    description: 'This is the description for the second blog post, which is slightly longer just to test the text wrapping.',
+    date: '20/10/2025',
+    content: [
+        'Content for the second blog post goes here...',
+        'It is usually much longer and more detailed than the description.',
+    ],
+    image: null, 
+  },
+  {
+    id: 'b4',
+    title: 'SECOND BLOG POST',
+    slug: 'second-blog-post',
+    description: 'This is the description for the second blog post, which is slightly longer just to test the text wrapping.',
+    date: '20/10/2025',
+    content: [
+        'Content for the second blog post goes here...',
+        'It is usually much longer and more detailed than the description.',
+    ],
+    image: null, 
+  },
 ];
 
 // --- ABOUT SECTION COPY ---
