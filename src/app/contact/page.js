@@ -2,7 +2,7 @@
 import styles from './ContactPage.module.css';
 
 export default function ContactPage() {
-    const emailAddress = 'temporarymail@gmail.com';
+    const emailAddress = 'tenoutoftenfilms@gmail.com';
     const subject = 'Partnership Inquiry from 10 OUT OF 10 Website';
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
     
