@@ -1,11 +1,6 @@
-// src/app/layout.js
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
-// Configure the placeholder font
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: '10 OUT OF 10 Podcast',
@@ -15,7 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/* Ensure the body tag no longer has any dynamic font class name */}
+      <body>
         <div className="full-page-container">
           <Header />
           <main style={{ flexGrow: 1 }}>
