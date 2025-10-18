@@ -42,7 +42,7 @@ const Header = () => {
           <div style={{ position: 'relative', width: '2rem', height: '2rem' }}> 
              <Image src="/assets/logo.svg" alt="10 OUT 10 Logo" fill /> 
           </div>
-          <span className={styles.logoText}>10 OUT OF 10</span>
+          <span className={styles.logoText}>TEN OUT OF TEN</span>
         </Link>
 
         {/* Desktop Navigation Links */}
