@@ -194,7 +194,7 @@ export const TEAM_MEMBERS = [
         position: 'Founder & Host',
         tenure: '',
         image: '/assets/pranavB.jpg',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     },
     {
         id: 'tm2',
@@ -203,7 +203,7 @@ export const TEAM_MEMBERS = [
         position: 'Co Founder',
         tenure: '',
         image: '/assets/pranavB.jpg',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     },
     {
         id: 'tm3',
@@ -212,7 +212,7 @@ export const TEAM_MEMBERS = [
         position: 'Producer',
         tenure: '',
         image: '/assets/PrabhathReddy.jpg',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     },
     {
         id: 'tm4',
@@ -221,7 +221,7 @@ export const TEAM_MEMBERS = [
         position: 'Host',
         tenure: '',
         image: '/assets/pranavB.jpg',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     },
     {
         id: 'tm5',
@@ -230,7 +230,7 @@ export const TEAM_MEMBERS = [
         position: 'Producer & Communications',
         tenure: '',
         image: '/assets/pranavB.jpg',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     },
     {
         id: 'tm6',
@@ -239,7 +239,7 @@ export const TEAM_MEMBERS = [
         position: 'Design',
         tenure: '',
         image: '/assets/pranavB.jpg',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     },
     {
         id: 'tm7',
@@ -248,7 +248,7 @@ export const TEAM_MEMBERS = [
         position: 'Producer',
         tenure: '',
         image: '/assets/pranavB.jpg',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     },
 ];
 

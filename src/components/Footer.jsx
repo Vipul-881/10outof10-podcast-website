@@ -63,7 +63,7 @@ const Footer = () => {
         
         {/* Copyright or additional info */}
         <div className={styles.copyright}>
-          &copy; {new Date().getFullYear()} 10 OUT OF 10 Podcast. All rights reserved.
+          &copy; {new Date().getFullYear()} TEN OUT OF TEN FILMS. All rights reserved.
         </div>
       </div>
     </footer>

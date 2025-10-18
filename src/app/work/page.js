@@ -9,7 +9,7 @@ export default function OurWorkPage() {
       
       {/* COMPLETED WORKS SECTION */}
       <section>
-        <h1 className={styles.sectionTitle}>Our Completed Works</h1>
+        <h1 className={styles.sectionTitle}>Our Work</h1>
         <div className={styles.workGrid}>
           {COMPLETED_WORKS.map(work => (
             <WorkCard key={work.id} work={work} />
@@ -19,7 +19,7 @@ export default function OurWorkPage() {
 
       {/* UPCOMING WORKS SECTION */}
       <section>
-        <h2 className={styles.sectionTitle}>Upcoming Works</h2>
+        <h2 className={styles.sectionTitle}>Upcoming Projects</h2>
         
         {UPCOMING_WORKS.length > 0 ? (
           // Renders upcoming works if the array is not empty
