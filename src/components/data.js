@@ -12,7 +12,7 @@ export const EPISODES = [
     isPopular: true,
     isLatest: false,
     // ADDED THUMBNAIL PROPERTY
-    thumbnail: '/assets/blog-image-1.jpg', 
+    thumbnail: '/assets/mahanati.jpg', 
   },
   {
     id: 'e2',
@@ -24,7 +24,7 @@ export const EPISODES = [
     isPopular: true,
     isLatest: false,
     // ADDED THUMBNAIL PROPERTY
-    thumbnail: '/assets/blog-image-1.jpg',
+    thumbnail: '/assets/parasite.jpg',
   },
   {
     id: 'e3',
@@ -36,18 +36,18 @@ export const EPISODES = [
     isPopular: false,
     isLatest: true,
     // ADDED THUMBNAIL PROPERTY
-    thumbnail: '/assets/blog-image-1.jpg',
+    thumbnail: '/assets/socialNetwork.jpg',
   },
   {
     id: 'e4',
     season: 1,
     episode: 9,
     title: ' Every FRIDAY Ever-Pranav B and Anand K',
-    description: '<Not Given>',
+    description: "Anand Karanam joins us to talk about his journey as a filmmaker and writer, while also primarily discussing the importance of film criticism and the impact of film reviews in today's world.",
     url: 'https://open.spotify.com/episode/7o7Zle42jyINGPmUEn0b4a?si=85Gf0BwtRF2TGQ_k2RgpLg',
     isPopular: false,
     isLatest: true,
-    thumbnail: '/assets/blog-image-1.jpg',
+    thumbnail: '/assets/FridayEver.jpg',
   },
 ];
 
@@ -123,6 +123,53 @@ export const BLOGS = [
     ],
     image: null, 
   },
+];
+
+export const COMPLETED_WORKS = [
+    {
+        id: 'w1',
+        title: 'Lilly',
+        type: 'Short Film',
+        year: 2024,
+        role: 'Production & Distribution',
+        description: 'A powerful short film that explores themes of identity and belonging through the lens of contemporary Telugu storytelling.',
+        link: 'https://youtu.be/GcdCW_XRoCk?si=Gxw9U0OQK78S4R9X', 
+        image: '/assets/blog-image-1.jpg', // Replace with actual image path if available
+    },
+    {
+        id: 'w2',
+        title: 'Anjigaadu',
+        type: 'Short Film',
+        year: 2023,
+        role: 'Publicity Collaborators',
+        description: 'When his village faces a grave crisis, Anjigaadu devises a simple yet powerful solution. Directed by Sai Ram, this short film gained widespread attention for its emotionally driven storytelling and beautifully crafted screenplay.',
+        link: 'https://youtu.be/ciQLCOhymHQ?si=aPScwgYl8mgEqh72',
+        image: '/assets/blog-image-1.jpg', // Replace with actual image path if available
+    },
+    {
+        id: 'w3',
+        title: 'Friday',
+        type: 'Independent Film',
+        year: 2024,
+        role: 'Presenters',
+        description: 'Directed by Anand Karanam,this critically acclaimed independent feature tells the story of an insomniac IT employee who prepares for a crucial meeting.',
+        link: 'https://youtu.be/O_qo4q1JDbs?si=3UNHuaFGgnTjckLg',
+         image: '/assets/blog-image-1.jpg',
+    },
+];
+
+// --- UPCOMING WORK DATA ARRAY ---
+export const UPCOMING_WORKS = [
+    {
+        id: 'u1',
+        title: 'Tarunam',
+        type: 'Short Film',
+        year: 2025,
+        role: 'Presenters',
+        description: 'Releasing this year, this short directed by our very own team member,Amarthya Raj tells us the story of a chess player who fights demons of his own.',
+        // link: '#',
+        image: '/assets/tarunam.png',
+    },
 ];
 
 // --- ABOUT SECTION COPY ---

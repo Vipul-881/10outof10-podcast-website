@@ -11,8 +11,8 @@ const NAV_LINKS = [
   { name: 'HOME', href: '/' },
   { name: 'OUR WORK', href: '/work' },
   { name: 'BLOG', href: '/blog' },
-  { name: 'CONTACT US', href: '#contact' }, 
   { name: 'OUR TEAM', href: '/team' },
+  { name: 'CONTACT US', href: '#contact' },
 ];
 
 const Header = () => {
@@ -41,7 +41,7 @@ const Header = () => {
           <div style={{ position: 'relative', width: '2rem', height: '2rem' }}> 
              <Image src="/assets/logo.svg" alt="10 OUT 10 Logo" fill /> 
           </div>
-          <span className={styles.logoText}>10 OUT OF 10</span>
+          <span className={styles.logoText}>Ten Out Of Ten</span>
         </Link>
 
         {/* Desktop Navigation Links */}

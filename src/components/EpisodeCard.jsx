@@ -1,17 +1,18 @@
 // src/components/EpisodeCard.jsx (MODIFIED)
 import Link from 'next/link';
-import Image from 'next/image'; // We need Image for optimized thumbnail loading
+import Image from 'next/image';
 import { FaSpotify } from 'react-icons/fa';
 import styles from './EpisodeCard.module.css'; 
 
 const EpisodeCard = ({ episode }) => {
-  const { season, title, description, url, thumbnail } = episode; // Destructure 'thumbnail'
+  // Removed season and episode from destructuring, only need title, description, url, and thumbnail
+  const { title, description, url, thumbnail } = episode; 
   
   return (
     <div className={styles.card}>
-      <div className={styles.contentWrapper}> {/* New wrapper for flex layout */}
+      <div className={styles.contentWrapper}>
         
-        {/* THUMBNAIL SECTION (NEW) */}
+        {/* THUMBNAIL SECTION (No change needed here) */}
         <div className={styles.thumbnailContainer}>
           <Image 
             src={thumbnail}
@@ -22,13 +23,13 @@ const EpisodeCard = ({ episode }) => {
           />
         </div>
         
-        <div className={styles.textDetails}> {/* New wrapper for episode details */}
+        <div className={styles.textDetails}>
           <div className={styles.header}>
-            <div className={styles.icon}>
-              S{season}
-            </div>
+            {/* REMOVED: The 'icon' div that previously displayed S# E# */}
+            
+            {/* MODIFIED: The title now stands alone without the S# E# prefix */}
             <h4 className={styles.title}>
-              E{episode.episode}: {title}
+              {title}
             </h4>
           </div>
           

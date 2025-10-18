@@ -1,17 +1,41 @@
-// src/app/work/page.js
+// src/app/work/page.js (MODIFIED TO USE CSS MODULES)
+import WorkCard from '../../components/WorkCard';
+import { COMPLETED_WORKS, UPCOMING_WORKS } from '../../components/data';
+import styles from './WorkPage.module.css'; // Import the new CSS Module
+
 export default function OurWorkPage() {
-  const containerStyle = { 
-    maxWidth: '1280px', 
-    margin: '0 auto', 
-    padding: '3rem 1rem', 
-    textAlign: 'center', 
-    minHeight: '50vh' 
-  };
-  
   return (
-    <div style={containerStyle}>
-      <h1 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#4B0082' }}>Our Work</h1>
-      <p style={{ marginTop: '1rem', fontSize: '1.25rem', color: '#4a5568' }}>This page is under construction. Check back soon!</p>
+    <div className={styles.container}>
+      
+      {/* COMPLETED WORKS SECTION */}
+      <section>
+        <h1 className={styles.sectionTitle}>Our Completed Works</h1>
+        <div className={styles.workGrid}>
+          {COMPLETED_WORKS.map(work => (
+            <WorkCard key={work.id} work={work} />
+          ))}
+        </div>
+      </section>
+
+      {/* UPCOMING WORKS SECTION */}
+      <section>
+        <h2 className={styles.sectionTitle}>Upcoming Works</h2>
+        
+        {UPCOMING_WORKS.length > 0 ? (
+          // Renders upcoming works if the array is not empty
+          <div className={styles.workGrid}>
+            {UPCOMING_WORKS.map(work => (
+              <WorkCard key={work.id} work={work} />
+            ))}
+          </div>
+        ) : (
+          // Renders the fun text if the array is empty
+          <div className={styles.placeholderText}>
+            Creativity is brewing! Check back soon for exciting new projects. 🎬🍿
+          </div>
+        )}
+      </section>
+
     </div>
   );
 }

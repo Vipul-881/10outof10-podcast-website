@@ -7,8 +7,8 @@ import styles from './Footer.module.css'; // Import styles
 const SOCIAL_LINKS = [
   { icon: FaSpotify, name: 'Spotify', url: 'https://open.spotify.com/show/1K9g6ClNj9TIK1CuAs5aOc?si=jppXn7UFQkemWFuGvJu6Dg' },
   { icon: FaInstagram, name: 'Instagram', url: 'https://www.instagram.com/tenoutoftenfilms?igsh=dGJtbjh3cTR0dHN4' },
-  { icon: FaApple, name: 'Apple Podcast', url: '#apple-link' },
-  { icon: FaGooglePlay, name: 'Gaana', url: '#gaana-link' }, 
+  { icon: FaApple, name: 'Apple Podcast', url: 'https://podcasts.apple.com/us/podcast/ten-out-of-ten/id1564755200' },
+  { icon: FaGooglePlay, name: 'Gaana', url: 'https://gaana.com/podcast/ten-out-of-ten-season-1' }, 
 ];
 
 const Footer = () => {
