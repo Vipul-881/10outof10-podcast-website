@@ -191,7 +191,7 @@ export const TEAM_MEMBERS = [
         lastName: 'Challa',
         position: 'Co Founder',
         tenure: '',
-        image: '/assets/pranavB.jpg',
+        image: '/assets/tanmayi.jpg',
         // instagram: 'https://www.instagram.com',
     },
     {
@@ -209,7 +209,7 @@ export const TEAM_MEMBERS = [
         lastName: 'Neduru',
         position: 'Host',
         tenure: '',
-        image: '/assets/pranavB.jpg',
+        image: '/assets/kushal.jpg',
         // instagram: 'https://www.instagram.com',
     },
     {
@@ -236,7 +236,7 @@ export const TEAM_MEMBERS = [
         lastName: 'Tummapudi',
         position: 'Producer',
         tenure: '',
-        image: '/assets/pranavB.jpg',
+        image: '/assets/hemal.jpg',
         // instagram: 'https://www.instagram.com',
     },
 ];
