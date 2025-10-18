@@ -11,9 +11,9 @@ const NAV_LINKS = [
   { name: 'HOME', href: '/' },
   { name: 'OUR WORK', href: '/work' },
   { name: 'BLOG', href: '/blog' },
-  // MODIFIED: Changed href from '#contact' to the new page route '/contact'
-  { name: 'CONTACT US', href: '/contact' }, 
+  // MODIFIED: Changed href from '#contact' to the new page route '/contact' 
   { name: 'OUR TEAM', href: '/team' },
+  { name: 'CONTACT US', href: '/contact' },
 ];
 
 const Header = () => {
