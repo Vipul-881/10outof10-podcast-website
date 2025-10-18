@@ -1,73 +1,91 @@
-// src/components/Footer.jsx (UPDATED: CSS Modules, id="contact")
-import Link from 'next/link';
-import { FaSpotify, FaInstagram, FaApple, FaGooglePlay } from 'react-icons/fa';
-import styles from './Footer.module.css'; // Import styles
+// src/components/Footer.jsx (MODIFIED: Client Component for Redirection)
+'use client'; // CRUCIAL: Must be a client component for event handlers and useRouter
 
-// Social Links Data
+import Link from 'next/link';
+import { useRouter } from 'next/navigation'; // Import useRouter for redirection
+import { FaSpotify, FaInstagram, FaApple, FaPodcast } from 'react-icons/fa';
+import styles from './Footer.module.css';
+
+// Update these social links with your actual URLs
 const SOCIAL_LINKS = [
-  { icon: FaSpotify, name: 'Spotify', url: 'https://open.spotify.com/show/1K9g6ClNj9TIK1CuAs5aOc?si=jppXn7UFQkemWFuGvJu6Dg' },
-  { icon: FaInstagram, name: 'Instagram', url: 'https://www.instagram.com/tenoutoftenfilms?igsh=dGJtbjh3cTR0dHN4' },
-  { icon: FaApple, name: 'Apple Podcast', url: 'https://podcasts.apple.com/us/podcast/ten-out-of-ten/id1564755200' },
-  { icon: FaGooglePlay, name: 'Gaana', url: 'https://gaana.com/podcast/ten-out-of-ten-season-1' }, 
+    { name: 'Spotify', icon: FaSpotify, href: 'YOUR_SPOTIFY_URL' },
+    { name: 'Instagram', icon: FaInstagram, href: 'YOUR_INSTAGRAM_URL' },
+    { name: 'Apple Podcasts', icon: FaApple, href: 'YOUR_APPLE_PODCAST_URL' },
+    { name: 'Gaana/Podcast', icon: FaPodcast, href: 'YOUR_GAANA_URL' },
 ];
 
 const Footer = () => {
-  return (
-    // ADDED id="contact"
-    <footer id="contact" className={styles.footer}> 
-      <div className={styles.contentWrapper}>
-        <div className={styles.mainLayout}>
-          
-          {/* Left Side: Social & Podcast Links */}
-          <div className={styles.listenSection}>
-            <h3>Listen & Connect</h3>
-            <div className={styles.socialLinks}>
-              {SOCIAL_LINKS.map((link) => (
-                <Link 
-                  key={link.name} 
-                  href={link.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.socialLink}
-                >
-                  <link.icon style={{ fontSize: '1.5rem' }} />
-                  <span style={{ fontSize: '0.875rem', fontWeight: '500' }}>{link.name}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
+    const router = useRouter();
 
-          {/* Right Side: Email Box */}
-          <div className={styles.formContainer}>
-            <h3>Send us an Email</h3>
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <input 
-                type="email" 
-                placeholder="Your email address"
-                className={styles.inputField}
-              />
-              <textarea 
-                placeholder="Your message"
-                rows="3"
-                className={styles.inputField}
-              ></textarea>
-              <button 
-                type="submit"
-                className={styles.submitButton}
-              >
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
+    // New handler to redirect to the contact page
+    const handleSendClick = (e) => {
+        e.preventDefault(); // Stop the default button submission behavior
         
-        {/* Copyright or additional info */}
-        <div className={styles.copyright}>
-          &copy; {new Date().getFullYear()} TEN OUT OF TEN FILMS. All rights reserved.
-        </div>
-      </div>
-    </footer>
-  );
+        // You could add logic here to check if fields are filled before redirecting
+        
+        // Redirect to the new Contact Us page
+        router.push('/contact');
+    };
+
+    return (
+        // Ensure the footer has the ID for the Contact US anchor link
+        <footer id="contact" className={styles.footer}>
+            <div className={styles.contentWrapper}>
+                <div className={styles.mainLayout}>
+
+                    {/* LEFT SIDE: Social Links (No change) */}
+                    <div className={styles.listenSection}>
+                        <h3>Listen & Connect</h3>
+                        <div className={styles.socialLinks}>
+                            {SOCIAL_LINKS.map((link) => (
+                                <Link key={link.name} href={link.href} className={styles.socialLink} target="_blank" rel="noopener noreferrer">
+                                    <link.icon size={24} />
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* RIGHT SIDE: Email Form (Modified) */}
+                    <div className={styles.formContainer}>
+                        <h3>Direct Message</h3>
+                        {/* CHANGED: Replaced <form> with <div> since we are not submitting */}
+                        <div className={styles.emailForm}>
+                            
+                            {/* Textbox 1: Sender's Email */}
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Your Email"
+                                className={styles.inputField}
+                            />
+
+                            {/* Textbox 2: The Message/Data */}
+                            <textarea
+                                name="message"
+                                placeholder="Your message / data"
+                                rows="3"
+                                className={`${styles.inputField} ${styles.textareaField}`}
+                            ></textarea>
+
+                            {/* MODIFIED: Added onClick handler for redirection */}
+                            <button 
+                                type="submit" 
+                                className={styles.submitButton}
+                                onClick={handleSendClick}
+                            >
+                                Send Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.copyright}>
+                    &copy; {new Date().getFullYear()} 10 OUT OF 10. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;
