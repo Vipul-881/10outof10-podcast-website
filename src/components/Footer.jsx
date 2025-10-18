@@ -45,39 +45,6 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
-
-                    {/* RIGHT SIDE: Email Form (Modified) */}
-                    <div className={styles.formContainer}>
-                        <h3>Direct Message</h3>
-                        {/* CHANGED: Replaced <form> with <div> since we are not submitting */}
-                        <div className={styles.emailForm}>
-                            
-                            {/* Textbox 1: Sender's Email */}
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Your Email"
-                                className={styles.inputField}
-                            />
-
-                            {/* Textbox 2: The Message/Data */}
-                            <textarea
-                                name="message"
-                                placeholder="Your message / data"
-                                rows="3"
-                                className={`${styles.inputField} ${styles.textareaField}`}
-                            ></textarea>
-
-                            {/* MODIFIED: Added onClick handler for redirection */}
-                            <button 
-                                type="submit" 
-                                className={styles.submitButton}
-                                onClick={handleSendClick}
-                            >
-                                Send Email
-                            </button>
-                        </div>
-                    </div>
                 </div>
 
                 <div className={styles.copyright}>
