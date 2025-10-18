@@ -9,9 +9,9 @@ export default function ContactPage() {
     return (
         <div className={styles.container}>
             <div className={styles.card}>
-                <h1 className={styles.title}>Partner With Us</h1>
+                <h1 className={styles.title}>Work With Us</h1>
                 <p className={styles.message}>
-                    If you want to partner up with us drop an email to:
+                    Whether it’s film submissions, collaborations, or partnerships — we’d love to hear from you at
                 </p>
                 
                 {/* Email link: Uses the mailto protocol to open the user's email client */}
