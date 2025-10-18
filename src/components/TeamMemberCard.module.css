@@ -1,0 +1,108 @@
+/* src/components/TeamMemberCard.module.css (MODIFIED FOR NEW COLORS) */
+.card {
+    display: flex;
+    /* CHANGED: Light gray background (White for better contrast) */
+    background-color: white; 
+    border-radius: 0.75rem; 
+    overflow: hidden; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    /* Border remains the accent purple */
+    border: 2px solid #8558DB; 
+}
+
+.imageWrapper {
+    position: relative;
+    flex-shrink: 0; 
+    width: 50%;
+    aspect-ratio: 3 / 4; 
+}
+
+/* Image styling */
+.memberImage {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+.infoWrapper {
+    flex-grow: 1; 
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    /* CHANGED: Dark purple text for contrast */
+    color: #4B0082; 
+}
+
+.position {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    /* CHANGED: Accent purple for position */
+    color: #8558DB; 
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    /* CHANGED: Dark purple for name */
+    color: #4B0082;
+    margin-bottom: 0.25rem;
+}
+
+.tenure {
+    font-size: 0.9rem;
+    /* CHANGED: Lighter, soft gray/purple for tenure */
+    color: #777; 
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.instagramButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem; 
+    height: 2.5rem;
+    border-radius: 9999px; 
+    /* CHANGED: Accent purple background for button */
+    background-color: #8558DB; 
+    /* CHANGED: White icon color */
+    color: white; 
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.instagramButton:hover {
+    opacity: 0.9;
+    color: #8558DB;
+    background-color: white;
+    border: 2px solid #8558DB;
+    /* No change needed for color here, maintains white icon */
+}
+
+
+/* Responsive adjustments for mobile (stacking content) */
+@media (max-width: 767px) {
+    .card {
+        flex-direction: column; 
+    }
+    .imageWrapper {
+        width: 100%; 
+        aspect-ratio: 16 / 9; 
+    }
+    .infoWrapper {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Adjust image width for larger screens to give more space to text */
+@media (min-width: 768px) {
+    .imageWrapper {
+        width: 40%; 
+    }
+}

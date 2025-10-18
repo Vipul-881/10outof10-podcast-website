@@ -1,17 +1,27 @@
-// src/app/team/page.js
-export default function OurTeamPage() {
-  const containerStyle = { 
-    maxWidth: '1280px', 
-    margin: '0 auto', 
-    padding: '3rem 1rem', 
-    textAlign: 'center', 
-    minHeight: '50vh' 
-  };
+// src/app/team/page.js (MODIFIED)
+import TeamMemberCard from '../../components/TeamMemberCard';
+import { TEAM_MEMBERS } from '../../components/data';
+import styles from './TeamPage.module.css'; // Will create this CSS Module
 
+export const metadata = {
+  title: 'Our Team - 10 OUT OF 10',
+  description: 'Meet the dedicated team behind the 10 OUT OF 10 podcast.',
+};
+
+// --- NEW CSS MODULE FOR TEAM PAGE LAYOUT ---
+// Create src/app/team/TeamPage.module.css with the content below
+// (Can't put media queries in inline styles directly in JS)
+
+export default function OurTeamPage() {
   return (
-    <div style={containerStyle}>
-      <h1 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#4B0082' }}>Our Team</h1>
-      <p style={{ marginTop: '1rem', fontSize: '1.25rem', color: '#4a5568' }}>Meet the hosts and producers of 10 OUT OF 10!</p>
+    <div className={styles.container}>
+      <h1 className={styles.pageTitle}>Meet the Team</h1>
+
+      <div className={styles.teamGrid}>
+        {TEAM_MEMBERS.map(member => (
+          <TeamMemberCard key={member.id} member={member} />
+        ))}
+      </div>
     </div>
   );
 }

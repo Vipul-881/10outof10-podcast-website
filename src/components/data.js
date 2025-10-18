@@ -172,5 +172,74 @@ export const UPCOMING_WORKS = [
     },
 ];
 
+// src/components/data.js (ADD THIS TO THE END OF THE FILE)
+
+// --- TEAM MEMBER DATA ARRAY ---
+export const TEAM_MEMBERS = [
+    {
+        id: 'tm1',
+        firstName: 'Pranav',
+        lastName: 'Bellary',
+        position: 'Founder & Host',
+        tenure: '',
+        image: '/assets/pranavB.jpg',
+        instagram: 'https://www.instagram.com',
+    },
+    {
+        id: 'tm2',
+        firstName: 'Tanmayi',
+        lastName: 'Challa',
+        position: 'Co Founder',
+        tenure: '',
+        image: '/assets/pranavB.jpg',
+        instagram: 'https://www.instagram.com',
+    },
+    {
+        id: 'tm3',
+        firstName: 'Prabhath',
+        lastName: ' Reddy',
+        position: 'Producer',
+        tenure: '',
+        image: '/assets/PrabhathReddy.jpg',
+        instagram: 'https://www.instagram.com',
+    },
+    {
+        id: 'tm4',
+        firstName: 'Kushal',
+        lastName: 'Neduru',
+        position: 'Host',
+        tenure: '',
+        image: '/assets/pranavB.jpg',
+        instagram: 'https://www.instagram.com',
+    },
+    {
+        id: 'tm5',
+        firstName: 'Amarthya',
+        lastName: 'Raj',
+        position: 'Producer & Communications',
+        tenure: '',
+        image: '/assets/pranavB.jpg',
+        instagram: 'https://www.instagram.com',
+    },
+    {
+        id: 'tm6',
+        firstName: 'Prachi',
+        lastName: 'Sarda',
+        position: 'Design',
+        tenure: '',
+        image: '/assets/pranavB.jpg',
+        instagram: 'https://www.instagram.com',
+    },
+    {
+        id: 'tm7',
+        firstName: 'Hemal',
+        lastName: 'Tummapudi',
+        position: 'Producer',
+        tenure: '',
+        image: '/assets/pranavB.jpg',
+        instagram: 'https://www.instagram.com',
+    },
+];
+
 // --- ABOUT SECTION COPY ---
 export const ABOUT_TEXT = "At Ten Out Of Ten, we dive into films that moved us, or moved the culture. With 3 seasons and 45 episodes, our podcast celebrates the art and joy of cinema. We spotlight stories worth watching and voices worth hearing.Beyond the mic, we present and distribute short and independent films across South India. Our collaborations include several critically acclaimed projects and filmmakers. Ten Out Of Ten is where passion for movies meets conversation that lasts.";
