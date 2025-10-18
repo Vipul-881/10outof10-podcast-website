@@ -1,18 +1,19 @@
-// src/components/Header.jsx
-'use client'; // CRUCIAL: Must be a Client Component to use useState
+// src/components/Header.jsx (MODIFIED: Contact link changed to /contact)
+'use client'; 
 
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for the menu
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 import styles from './Header.module.css'; 
 
 const NAV_LINKS = [
   { name: 'HOME', href: '/' },
   { name: 'OUR WORK', href: '/work' },
   { name: 'BLOG', href: '/blog' },
+  // MODIFIED: Changed href from '#contact' to the new page route '/contact'
+  { name: 'CONTACT US', href: '/contact' }, 
   { name: 'OUR TEAM', href: '/team' },
-  { name: 'CONTACT US', href: '#contact' },
 ];
 
 const Header = () => {
@@ -41,7 +42,7 @@ const Header = () => {
           <div style={{ position: 'relative', width: '2rem', height: '2rem' }}> 
              <Image src="/assets/logo.svg" alt="10 OUT 10 Logo" fill /> 
           </div>
-          <span className={styles.logoText}>Ten Out Of Ten</span>
+          <span className={styles.logoText}>10 OUT OF 10</span>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -59,7 +60,6 @@ const Header = () => {
         
         {/* Mobile Menu Icon (Hamburger) */}
         <button className={styles.menuButton} onClick={toggleMenu} aria-label="Toggle navigation menu">
-          {/* Show X icon when open, Hamburger icon when closed */}
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
