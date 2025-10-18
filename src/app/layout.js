@@ -1,4 +1,7 @@
-// src/app/layout.js (COMPLETE CODE)
+// src/app/layout.js (MODIFIED to include Vercel Analytics)
+
+// Import the Vercel Analytics component
+import { Analytics } from '@vercel/analytics/react';
 
 // Import the global CSS file
 import './globals.css';
@@ -16,16 +19,16 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* Font is applied via the global CSS file */}
       <body>
-        {/* The full-page-container class from globals.css ensures Header, Main, and Footer fill the screen */}
         <div className="full-page-container">
           <Header />
-          {/* Main content area, flex-grow: 1 ensures it takes up all vertical space */}
           <main style={{ flexGrow: 1 }}>
             {children}
           </main>
-          {/* The modified Footer is rendered here */}
           <Footer />
         </div>
+        
+        {/* CRITICAL: Add the Vercel Analytics component here */}
+        <Analytics />
       </body>
     </html>
   );
