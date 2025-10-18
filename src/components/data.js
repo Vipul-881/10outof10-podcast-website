@@ -49,17 +49,6 @@ export const EPISODES = [
     isLatest: true,
     thumbnail: '/assets/FridayEver.jpg',
   },
-  {
-    id: 'e24',
-    season: 1,
-    episode: 9,
-    title: ' Every FRIDAY Ever-Pranav B and Anand K',
-    description: "Anand Karanam joins us to talk about his journey as a filmmaker and writer, while also primarily discussing the importance of film criticism and the impact of film reviews in today's world.",
-    url: 'https://open.spotify.com/episode/7o7Zle42jyINGPmUEn0b4a?si=85Gf0BwtRF2TGQ_k2RgpLg',
-    isPopular: false,
-    isLatest: true,
-    thumbnail: '/assets/praveen.jpg',
-  },
 ];
 
 // --- GUEST DATA ARRAY ---
