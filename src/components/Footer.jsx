@@ -8,10 +8,10 @@ import styles from './Footer.module.css';
 
 // Update these social links with your actual URLs
 const SOCIAL_LINKS = [
-    { name: 'Spotify', icon: FaSpotify, href: 'YOUR_SPOTIFY_URL' },
-    { name: 'Instagram', icon: FaInstagram, href: 'YOUR_INSTAGRAM_URL' },
-    { name: 'Apple Podcasts', icon: FaApple, href: 'YOUR_APPLE_PODCAST_URL' },
-    { name: 'Gaana/Podcast', icon: FaPodcast, href: 'YOUR_GAANA_URL' },
+    { name: 'Spotify', icon: FaSpotify, href: 'https://open.spotify.com/show/1K9g6ClNj9TIK1CuAs5aOc?si=jppXn7UFQkemWFuGvJu6Dg' },
+    { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/tenoutoftenfilms?igsh=dGJtbjh3cTR0dHN4' },
+    { name: 'Apple Podcasts', icon: FaApple, href: 'https://podcasts.apple.com/us/podcast/ten-out-of-ten/id1564755200' },
+    { name: 'Gaana/Podcast', icon: FaPodcast, href: 'https://gaana.com/podcast/ten-out-of-ten-season-1' },
 ];
 
 const Footer = () => {
