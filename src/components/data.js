@@ -218,7 +218,7 @@ export const TEAM_MEMBERS = [
         lastName: 'Raj',
         position: 'Producer & Communications',
         tenure: '',
-        image: '/assets/pranavB.jpg',
+        image: '/assets/amarthya.jpg',
         // instagram: 'https://www.instagram.com',
     },
     {
@@ -227,7 +227,7 @@ export const TEAM_MEMBERS = [
         lastName: 'Sarda',
         position: 'Design',
         tenure: '',
-        image: '/assets/pranavB.jpg',
+        image: '/assets/prachi.png',
         // instagram: 'https://www.instagram.com',
     },
     {
