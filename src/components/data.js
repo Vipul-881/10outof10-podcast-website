@@ -206,7 +206,7 @@ export const TEAM_MEMBERS = [
     {
         id: 'tm4',
         firstName: 'Kushal',
-        lastName: 'Neduru',
+        lastName: 'Nedurukommala',
         position: 'Host',
         tenure: '',
         image: '/assets/kushal.jpg',
