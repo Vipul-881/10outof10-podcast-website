@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 // Metadata for the page (SEO and browser tabs)
 export const metadata = {
-  title: '10 OUT OF 10 Podcast',
+  title: 'Ten Out Of Ten Podcast',
   description: 'Your movie podcast channel from Spotify.',
 };
 
