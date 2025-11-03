@@ -134,7 +134,7 @@ export const COMPLETED_WORKS = [
         role: 'Production & Distribution',
         description: 'A powerful short film that explores themes of identity and belonging through the lens of contemporary Telugu storytelling.',
         link: 'https://youtu.be/GcdCW_XRoCk?si=Gxw9U0OQK78S4R9X', 
-        image: '/assets/blog-image-1.jpg', // Replace with actual image path if available
+        image: '/assets/Lilypuku.jpg', // Replace with actual image path if available
     },
     {
         id: 'w2',
@@ -144,7 +144,7 @@ export const COMPLETED_WORKS = [
         role: 'Publicity Collaborators',
         description: 'When his village faces a grave crisis, Anjigaadu devises a simple yet powerful solution. Directed by Sai Ram, this short film gained widespread attention for its emotionally driven storytelling and beautifully crafted screenplay.',
         link: 'https://youtu.be/ciQLCOhymHQ?si=aPScwgYl8mgEqh72',
-        image: '/assets/blog-image-1.jpg', // Replace with actual image path if available
+        image: '/assets/AnjiModda.jpg', // Replace with actual image path if available
     },
     {
         id: 'w3',
@@ -154,7 +154,7 @@ export const COMPLETED_WORKS = [
         role: 'Presenters',
         description: 'Directed by Anand Karanam,this critically acclaimed independent feature tells the story of an insomniac IT employee who prepares for a crucial meeting.',
         link: 'https://youtu.be/O_qo4q1JDbs?si=3UNHuaFGgnTjckLg',
-         image: '/assets/blog-image-1.jpg',
+         image: '/assets/Friday.jpg',
     },
 ];
 
