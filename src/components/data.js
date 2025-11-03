@@ -170,6 +170,16 @@ export const UPCOMING_WORKS = [
         // link: '#',
         image: '/assets/tarunam.png',
     },
+    {
+          id: 'u2',
+          title: 'Juliet',
+          type: 'Short Film',
+          year: 2025,
+          role: 'Presenters',
+          description: 'Sriram tells a story',
+          // link: '#',
+          image: '/assets/tarunam.png',
+      },
 ];
 
 // src/components/data.js (ADD THIS TO THE END OF THE FILE)
