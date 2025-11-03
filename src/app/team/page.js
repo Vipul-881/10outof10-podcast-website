@@ -4,7 +4,7 @@ import { TEAM_MEMBERS } from '../../components/data';
 import styles from './TeamPage.module.css'; // Will create this CSS Module
 
 export const metadata = {
-  title: 'Our Team - 10 OUT OF 10',
+  title: 'Ten Out Of Ten Podcast',
   description: 'Meet the dedicated team behind the 10 OUT OF 10 podcast.',
 };
 
