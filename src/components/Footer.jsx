@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.copyright}>
-                    &copy; {new Date().getFullYear()} 10 OUT OF 10. All rights reserved.
+                    &copy; {new Date().getFullYear()} Ten Out Of Ten. All rights reserved.
                 </div>
             </div>
         </footer>
