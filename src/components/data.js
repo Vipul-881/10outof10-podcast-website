@@ -168,7 +168,7 @@ export const UPCOMING_WORKS = [
         role: 'Presenters',
         description: 'Releasing this year, this short directed by our very own team member,Amarthya Raj tells us the story of a chess player who fights demons of his own.',
         // link: '#',
-        image: '/assets/tarunam.png',
+        image: '/assets/TarunamPic.jpg',
     },
     {
           id: 'u2',
