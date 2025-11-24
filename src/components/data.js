@@ -154,7 +154,7 @@ export const COMPLETED_WORKS = [
         role: 'Presenters',
         description: 'Directed by Anand Karanam,this critically acclaimed independent feature tells the story of an insomniac IT employee who prepares for a crucial meeting.',
         link: 'https://youtu.be/O_qo4q1JDbs?si=3UNHuaFGgnTjckLg',
-         image: '/assets/Friday.jpg',
+         image: '/assets/FridayPic.jpg',
     },
 ];
 
