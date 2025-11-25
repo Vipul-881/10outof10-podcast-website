@@ -74,18 +74,18 @@
 }*/
 
 .learnMoreButton {
-  align-self: flex-start;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #8558DB
-  background-color: #8558DB; 
-  color: white;              
-  font-weight: 600;
-  transition: background-color 0.2s, color 0.2s;
-  text-decoration: none;
-  cursor: pointer;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    background: #8558DB;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #8558DB; 
+    color: white;              
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
 }
 
 /*.learnMoreButton:hover {
