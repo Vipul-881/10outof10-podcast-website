@@ -95,9 +95,8 @@
 
 .learnMoreButton:hover {
   background-color: #9970E5; 
-  color: white;              
-  transform: scale(1.03);    
-  cursor: pointer;
+  color: white;
+  transform: scale(1.03);
 }
 
 .learnMoreButton svg {
