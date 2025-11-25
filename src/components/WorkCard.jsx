@@ -45,7 +45,7 @@ const WorkCard = ({ work }) => {
             href={link} 
             className={styles.learnMoreButton}
           >
-            Learn More
+            Watch Now
             <FaArrowRight size={12} />
           </Link>
       )}
