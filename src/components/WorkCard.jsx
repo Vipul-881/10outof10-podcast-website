@@ -46,7 +46,7 @@ const WorkCard = ({ work }) => {
             className={styles.learnMoreButton}
           >
             Watch Now ▶
-            //<FaArrowRight size={12} />
+            {/* <FaArrowRight size={12} /> */}
           </Link>
       )}
     </div>
