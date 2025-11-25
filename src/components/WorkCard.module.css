@@ -58,13 +58,28 @@
     margin-bottom: 1.5rem;
 }
 
-.learnMoreButton {
+/*.learnMoreButton {
     align-self: flex-start;
     display: inline-flex;
     align-items: center;
     background: none;
     border: 1px solid #8558DB;
     color: #8558DB;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}*/
+
+.learnMoreButton {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    background: #8558DB;
+    border: 1px solid #8558DB;
+    color: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-weight: 600;
