@@ -74,16 +74,18 @@
 }*/
 
 .learnMoreButton {
+  align-self: flex-start;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 10px 18px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #8558DB
   background-color: #8558DB; 
   color: white;              
-  border-radius: 8px;
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s, color 0.2s;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*.learnMoreButton:hover {
