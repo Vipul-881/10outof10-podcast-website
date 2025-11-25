@@ -164,7 +164,7 @@ export const COMPLETED_WORKS = [
         role: 'Presenters',
         description: 'On a messy college film set, an unexpected spark grows between Abhinav, a carefree fresher who dreams of becoming an actor, and Priya, a first-time director finding her voice. Laughter, long walks, and shared dreams pull them closer. Until reality steps in, forcing them to choose whether to hold on, or let go',
         link: 'https://youtu.be/ljE4YnD950E?si=QPfPSQQUXI6AS_Sb',
-         image: '/assets/FridayPic.jpg',
+        image: '/assets/LCApic.jpg',
     },
 ];
 
