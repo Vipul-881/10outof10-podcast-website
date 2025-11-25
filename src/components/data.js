@@ -178,7 +178,7 @@ export const UPCOMING_WORKS = [
           role: 'Presenters',
           description: 'Sriram tells a story',
           // link: '#',
-          image: '/assets/tarunam.png',
+          image: '/assets/JulietPic.png',
       },
 ];
 
